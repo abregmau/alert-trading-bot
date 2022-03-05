@@ -1,0 +1,5 @@
+# All config params are explained in depth in the repo.
+[telegramBot_user_config]
+
+# Token to access the HTTP API:
+token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
