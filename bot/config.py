@@ -9,7 +9,7 @@ class botConfig:
         # Init config
         config = configparser.ConfigParser()
         config["DEFAULT"] = {
-            "token": "xxxxxxxxxxxxxxxxxxxxxxxx",
+            "token": "XXXXXXXXXXXXXXXXXXXXX",
         }
 
         if not os.path.exists(CFG_FL_NAME):
