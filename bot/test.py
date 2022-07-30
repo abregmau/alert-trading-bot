@@ -1,9 +1,16 @@
+from matplotlib.pyplot import pause
 import telebot
 import os
+import time
 
 # Create bot
 
 bot = telebot.TeleBot(token=os.environ['TOKEN'])
+i=0
 
 # Send message
-bot.send_message(353032690, 'Hi! I\'m a Bot! by Mauricio Abregú')
+while(True):
+    text= 'Hi! I\'m a Bot! by Mauricio Abregú ' + str(i)
+    bot.send_message(353032690, text)
+    i+=1
+    time.sleep(30)
