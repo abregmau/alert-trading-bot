@@ -20,3 +20,4 @@ class botConfig:
 
         # Token to access the HTTP API
         self.TOKEN = config.get(USER_CFG_SECTION, "token")
+        self.TOKEN = os.environ['TOKEN']
