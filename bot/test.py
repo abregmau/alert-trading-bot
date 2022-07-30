@@ -1,4 +1,3 @@
-from matplotlib.pyplot import pause
 import telebot
 import os
 import time
