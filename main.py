@@ -1,9 +1,12 @@
 import telebot
-import config
+from config import setup_env
 
-confBot = config.botConfig()
+cfg_name = "./config/user.cfg"
+confBot = setup_env.botConfig(cfg_name)
 
-bot = telebot.TeleBot(confBot.TOKEN)
+bot = telebot.TeleBot(confBot.telebotKey)
+
+bot.send_message(353032690, 'Say Start Plis!')
 
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
