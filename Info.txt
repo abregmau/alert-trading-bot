@@ -1,3 +1,6 @@
-My chat ID:
-
+# My chat ID Telegram:
 https://www.alphr.com/find-chat-id-telegram/
+
+# Desplegar un bot de Telegram a Heroku Tutoriales
+https://www.youtube.com/watch?v=EVDEmIObHn4
+https://binary-coffee.dev/post/aprende-a-desplegar-un-bot-de-telegram-en-heroku
