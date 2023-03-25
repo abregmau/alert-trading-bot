@@ -4,3 +4,8 @@ https://www.alphr.com/find-chat-id-telegram/
 # Desplegar un bot de Telegram a Heroku Tutoriales
 https://www.youtube.com/watch?v=EVDEmIObHn4
 https://binary-coffee.dev/post/aprende-a-desplegar-un-bot-de-telegram-en-heroku
+
+# Thelethon
+
+https://docs.telethon.dev/en/stable/basic/installation.html
+https://github.com/LonamiWebs/Telethon/tree/v2/telethon
