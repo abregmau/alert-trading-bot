@@ -14,4 +14,6 @@ def send_welcome(message):
 @bot.message_handler(func=lambda message: True)
 def echo_all(message):
     bot.reply_to(message, message.text)
-bot.polling()
+
+#bot.polling()
+bot.infinity_polling(timeout=1000, long_polling_timeout = 1000)
