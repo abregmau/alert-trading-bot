@@ -16,4 +16,4 @@ def echo_all(message):
     bot.reply_to(message, message.text)
 
 #bot.polling()
-bot.infinity_polling(timeout=1000, long_polling_timeout = 1000)
+bot.infinity_polling(timeout=10, long_polling_timeout = 5)
