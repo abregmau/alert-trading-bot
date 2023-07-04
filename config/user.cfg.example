@@ -1,4 +1,32 @@
-[telegramBot_user_config]
+[GENERAL_USER_CONFIG]
 
-# Token to access the HTTP API:
-token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+ENVIRONMENT = DEVELOPMENT
+# Set "PRODUCTION" or "DEVELOPMENT"
+LOGGING_LEVEL = DEBUG
+# Set "DEBUG", "INFO", "WARNING", "ERROR" or "CRITICAL"
+
+### TOKENS FOR PRODUCTION MODE
+# Token to access the Telegram API:
+TELEBOT_KEY_PROD = xxxxxx
+TELEBOT_CHANNEL_PROD = xxxxxx
+# Token to access the Binance Spot API:
+BINANCE_KEY_PROD = xxxxxx
+BINANCE_SECRET_PROD = xxxxxx
+# Token to access the Binance Future API:
+BINANCE_FUTURE_KEY_PROD = xxxxxx
+BINANCE_FUTURE_SECRET_PROD = xxxxxx
+
+### TOKENS FOR DEVELOPMENT MODE
+# Token to access the Telegram API:
+TELEBOT_KEY_DEV = xxxxxx
+TELEBOT_CHANNEL_DEV = xxxxxx
+# Token to access the Binance Spot API:
+BINANCE_KEY_DEV = xxxxxx
+BINANCE_SECRET_DEV = xxxxxx
+# Token to access the Binance Future API:
+BINANCE_FUTURE_KEY_DEV = xxxxxx
+BINANCE_FUTURE_SECRET_DEV = xxxxxx
+
+### My Telegram Keys
+TELEGRAM_USER_ID = xxxxxx
+TELEGRAM_USER_HASH = xxxxxx

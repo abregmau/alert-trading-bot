@@ -1,3 +1,9 @@
+# General:
+
+https://j2logo.com/python/tutorial/programacion-orientada-a-objetos/
+https://cryptopasta.win/
+https://docs.telethon.dev/en/stable/modules/client.html
+
 # My chat ID Telegram:
 https://www.alphr.com/find-chat-id-telegram/
 
@@ -9,3 +15,7 @@ https://binary-coffee.dev/post/aprende-a-desplegar-un-bot-de-telegram-en-heroku
 
 https://docs.telethon.dev/en/stable/basic/installation.html
 https://github.com/LonamiWebs/Telethon/tree/v2/telethon
+
+# Logging
+
+https://docs.python.org/es/3/howto/logging.html
