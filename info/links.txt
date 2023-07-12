@@ -12,10 +12,11 @@ https://www.youtube.com/watch?v=EVDEmIObHn4
 https://binary-coffee.dev/post/aprende-a-desplegar-un-bot-de-telegram-en-heroku
 
 # Thelethon
-
 https://docs.telethon.dev/en/stable/basic/installation.html
 https://github.com/LonamiWebs/Telethon/tree/v2/telethon
 
 # Logging
-
 https://docs.python.org/es/3/howto/logging.html
+
+# Binance
+https://medium.com/analytics-vidhya/futures-trading-with-python-binance-d738c71e17b5

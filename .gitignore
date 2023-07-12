@@ -4,3 +4,5 @@ __pycache__
 anon.*
 session.*
 test/*
+*.xlsx
+*.pkl

@@ -4,7 +4,7 @@ from telegram import denmarkSignal
 
 # Libraries for Binance
 from modules import binanceFunctions
-from modules import binanceClases
+from modules import binanceClasses
 
 
 # General Libraries
@@ -28,8 +28,9 @@ clientTelegramUser = TelegramClient('session', confBot.telegramUserId, confBot.t
 
 # Configure Binance
 clientBinance = Client(confBot.binanceFutureKey, confBot.binanceFutureSecret, testnet=(not confBot.environment == "PRODUCTION"))
+infoBinance = clientBinance.futures_exchange_info()
 
-# Define funtions
+# Define functions
 
 @clientTelegramUser.on(events.NewMessage(chats=-771853770))
 #@clientTelegramUser.on(events.NewMessage(chats=-1794357158))
@@ -45,18 +46,19 @@ def run_binance_thread():
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
 
-    listSignals = binanceClases.listSignals()
-    
+    listSignals = binanceFunctions.readSignalsFromFile('./data/pickle/data.pkl')
+
     async def signal_task():
         while True:
             if not signal_queue.empty():
                 signal = signal_queue.get()
                 logging.debug("Signal retrieve from queue")
                 
-                newSignal = binanceClases.signal(signal)
+                newSignal = binanceClasses.signal(signal, infoBinance)
                 listSignals.appendSignal(newSignal)
             
             listSignals.checkListStatus(clientBinance)
+            listSignals.saveSignalsToFile('./data/pickle/data.pkl')
         
     loop.run_until_complete(signal_task())
 
